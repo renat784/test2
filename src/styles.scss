@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+
+// build in functions
+
+$col: red;
+
+ul li span{
+    color: $col;
+    &:hover{               
+        // color: darken($color: $col, $amount: 25%);  // 25% darker
+        color: lighten($color: $col, $amount: 25%);  // 25% darker
+    }
+}
